@@ -4,7 +4,7 @@
 
 - For navigation refer:https://reactnavigation.org/docs/material-top-tab-navigator
 
-- Tab Navigation options were changed to get rid of the headers and make the UI look smooth
+- Tab Navigation options were changed to get rid of the headers and make the UI look smooth,
 The options are pretty self explainatory
 
 ```
