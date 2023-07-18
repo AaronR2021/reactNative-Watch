@@ -30,3 +30,9 @@
 ```
 
 - variable.toString().padStart(2, '0') padds the value to 2 characters,if it crosses 2 or is already 2, it will ignore
+
+#### version-"3.0.0"
+- fetch system information 
+`expo install expo-battery`
+- import {useIsFocused } from '@react-navigation/native'; `to check if you are the current page, the moment you leave useInFocus is false`
+

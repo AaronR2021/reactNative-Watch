@@ -23,8 +23,8 @@ export default function App() {
           tabBarIndicatorStyle: { backgroundColor: "transparent" },
         }}
       >
-        <Tab.Screen name="StopWatch" component={StopWatch} />
         <Tab.Screen name="Clock" component={Clock} />
+        <Tab.Screen name="StopWatch" component={StopWatch} />
         <Tab.Screen name="Alarm" component={Alarm} />
         <Tab.Screen name="Calender" component={Calender} />
       </Tab.Navigator>

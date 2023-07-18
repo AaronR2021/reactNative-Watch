@@ -25,7 +25,6 @@ function StopWatch() {
       setSave(true);
     } else {
       //first time
-      console.log("first time-start");
       startDateRef.current = new Date(); //ref persists value even during re-rendering
       setTimerStart(true);
       //toggle button
@@ -39,7 +38,6 @@ function StopWatch() {
     setSave(false);
 
     deltaDateRef.current = new Date() - startDateRef.current;
-    console.log(deltaDateRef.current, "delta time");
   };
   const resetFunction = () => {
     startDateRef.current = null;
@@ -64,7 +62,6 @@ function StopWatch() {
 
   const saveTime = () => {
     const differenceInMilliseconds = new Date() - startDateRef.current;
-    console.log(differenceInMilliseconds, startDateRef.current);
 
     const hours = Math.floor(differenceInMilliseconds / (1000 * 60 * 60))
       .toString()
@@ -92,7 +89,6 @@ function StopWatch() {
     }
     //when we press pause
     else {
-      console.log("else", timerIdRef.current);
       clearTimeout(timerIdRef.current);
     }
     // Cleanup function
@@ -139,8 +135,8 @@ function StopWatch() {
 
       {/*List of timers*/}
       <ScrollView>
-        {acceptedTime.map((time) => {
-          return <TimerTile time={time} />;
+        {acceptedTime.map((time,index) => {
+          return <TimerTile key={index} time={time} />;
         })}
       </ScrollView>
     </View>

@@ -1,0 +1,65 @@
+import { StyleSheet } from "react-native";
+
+export const ClockStyleSheet = StyleSheet.create({
+    pageLayout:{
+        flex:1,
+        backgroundColor:'black',
+        padding:30,
+        paddingTop:50,
+        alignItems:'center',
+    },
+    ClockLayout:{
+        flex:1,
+        justifyContent:'center'
+    },
+    CircleLayout:{
+        borderColor:'orange',
+        borderWidth:3,
+        borderRadius:100,
+        width:210,
+        height:210,
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        flexDirection:"column"
+    },
+    row:{
+        display:'flex',
+        alignItems:"baseline",
+        justifyContent:"center",
+        flexDirection:"row"
+    },
+    TextFormat:{
+        fontSize:30,
+    },
+    TimeState:{
+        fontSize:18,
+        color:'white'
+    },
+    TextWhite:{
+        color:'white',
+        fontSize:30
+    },
+    TextWhiteBeat:{
+        color:'#FFE5B4',
+        fontSize:30
+    },
+    batteryBox:{
+        position:'absolute',
+        bottom:-40,
+        left:85
+    },
+
+    TextBattery:{
+        fontSize:15,
+        color:'white',
+        },
+    TextWhiteBattery:{
+        color:'#FFE5B4',
+        fontSize:15
+    },
+    TextWhiteBatteryBeat:{
+        color:'#EDEADA',
+        fontSize:15
+    }
+})
